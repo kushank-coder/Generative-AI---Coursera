@@ -1,8 +1,8 @@
 # Generative-AI---Coursera
 Note: Hugging face is the main hub for open source LLMs. most of the llms , tokenization, model etc are already built by hugging face
 Basic framework for applying an llm model:-
-1)
-  #installing all the libraries (in this course pytorch is used)
+
+1)  #installing all the libraries (in this course pytorch is used)
 %pip install --upgrade pip
 %pip install --disable-pip-version-check \
     torch==1.13.1 \  #installing torch (will be using pytorch
@@ -57,7 +57,6 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)  #Note even
     )
 
 
-
-   6)  Generation_config (max_tokens, temperature, top p, top k) - refer week 1 video for insights or meaning of each configuration
+6) Generation_config (max_tokens, temperature, top p, top k) - refer week 1 video for insights or meaning of each configuration
 Example:
 #generation_config = GenerationConfig(max_new_tokens=50, do_sample=True, temperature=0.1)
