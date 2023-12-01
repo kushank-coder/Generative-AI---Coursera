@@ -9,3 +9,5 @@ Few shot Learning or inference : Prompt + Instruction mode + More than one examp
 
 You interact with an llm by language not be code (prompt)
 
+
+1) evaluation of llm is generally done by BLEU, and ROUGE.  But most of the reliable is when the evaluation is done by a human (it is referred to be gold standard) when evaluating the model
