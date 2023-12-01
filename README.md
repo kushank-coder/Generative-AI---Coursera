@@ -15,10 +15,10 @@ Basic framework for applying an llm model:-
 2) #importing all the libraries
 
  from datasets import load_dataset
- from transformers import AutoModelForSeq2SeqLM # this is general class for extracting model from transformer library. Specific models coefficients or parameter values are accessed using this class. For example                                                   #like flant5 , GPT) etc we will need we will further need to download the specific model 
+ from transformers import AutoModelForSeq2SeqLM                            # this is general class for extracting model from transformer library. Specific models coefficients or parameter values are accessed using this class. For example                                                   #like flant5 , GPT) etc we will need we will further need to download the specific model 
 
- from transformers import AutoTokenizer  #there is a tokenizer class in transformer library...tokenization will be specific to the model
- from transformers import GenerationConfig # GenerationConfig class in transformer library
+ from transformers import AutoTokenizer                                    #there is a tokenizer class in transformer library...tokenization will be specific to the model
+ from transformers import GenerationConfig                                 # GenerationConfig class in transformer library
 
 3) #load the datasets
 huggingface_dataset_name = "knkarthick/dialogsum" #dataset is downloaded
