@@ -3,9 +3,9 @@ Note: Hugging face is the main hub for open source LLMs. most of the llms , toke
 Basic framework for applying an llm model:- see "Helper file to apply LLMs" file
 
 Prompt Engineering:
-Zero shot Learning : Basically prompt given in an instruction mode
-One shot Learning or inference : Prompt + Instruction mode + one example of how the model should respond (llms learn from examples given in their context window also known as In context learning)
-Few shot Learning or inference : Prompt + Instruction mode + More than one example 
+1) Zero shot Learning : Basically prompt given in an instruction mode
+2) One shot Learning or inference : Prompt + Instruction mode + one example of how the model should respond (llms learn from examples given in their context window also known as In context learning)
+3) Few shot Learning or inference : Prompt + Instruction mode + More than one example 
 
 Fine Tuning:
 1)  Instruction Fine Tuning (training each and every parameter of the llm but in the form of instructions. There is a possibility of catastrophic forgetting. Solution : Try fine tuning on a diverse new set of data (memory requirements are higher for executing this)
