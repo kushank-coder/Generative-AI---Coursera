@@ -1,7 +1,8 @@
 # Generative-AI---Coursera
 Note: Hugging face is the main hub for open source LLMs. most of the llms , tokenization, model etc are already built by hugging face
 Basic framework for applying an llm model:- see "Helper file to apply LLMs" file
-** masked self attention in the decoder is the key ingredient for self supervised learning of an llm
+1) masked self attention in the decoder is the key ingredient for self supervised learning of an llm
+2) Evaluation Metrics for a LLM: BLEU (for translation tasks) and ROUGE (for text summarization tasks)
 
 Prompt Engineering: / (In Context Learning)
 1) Zero shot Learning : Basically prompt given in an instruction mode
