@@ -33,7 +33,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name, use_fast=True)  #Note even
        sentence_encoded = tokenizer(sentence, return_tensors='pt') #will return tokens
        ii) apply model to the encoded sentence and over and above that apply tokenizers decoder (which converts tokens back into text)
          sentence_decoded = tokenizer.decode(
-                      sentence_encoded["input_ids"],  #this will be models output
+                      sentence_encoded["input_ids"][0],  #this will be models output
                     skip_special_tokens=True
                       )
        iii) sentence decoded is the answer
