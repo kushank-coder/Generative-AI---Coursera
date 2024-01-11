@@ -31,11 +31,11 @@ Some additional important points:
 3) Sirf model ke parameters badhaenfe then over parameterize hoga sirf data badhaenge to training Data badhega but performance shayad utni na bade. Chinchilla model says ki optimal model 20X tokens of model parameters chahiye. Compute budget jitna zyada hoga utni better performance hogi (because ham model size ya gpu etc badha sakenge)
 4) Question on whether we need or not a new llm from scratch depends upon the use case we have. If the use case is same with respect to which llm is trained then there is no need to learn an llm from scratch, else it further depends on compute budget of the project
 
-5) Configuration parameters of an llm
-   There are 4 generative configuration parameters which are set at the time of inference (and not calculated during training)temperature, max tokens, top p and top k.
-   i) Temperature: This alters the probability of the last softmax layer which lays distribution of output tokens. The higher temperature makes the distribution of tokens more flatter and NOT skewed. It makes peaks go down and maybe surrounding points probability it might decrease. T>1 -> more creative output . T=1 nullifies the impact of temperature, T<1 makes the distribution much more skewed
-  ii) max tokens : It caps the total no of tokens that the llm can output (note it is not no of words, it is no of tokens)
-  iii) top p : selects top tokens (from top in terms of highest probability) and select only those much tokens from top whose probability sum <=p. then out of these selected tokens, randomly (weighted on probability) is outputed.
- iv) top k tokens: it is very much similar to top p, only difference is it subsets top k tokens (in terms of their probability)
+##Configuration parameters of an llm
+There are 4 generative configuration parameters which are set at the time of inference (and not calculated during training)temperature, max tokens, top p and top k.
+1) Temperature: This alters the probability of the last softmax layer which lays distribution of output tokens. The higher temperature makes the distribution of tokens more flatter and NOT skewed. It makes peaks go down and maybe surrounding points probability it might decrease. T>1 -> more creative output . T=1 nullifies the impact of temperature, T<1 makes the distribution much more skewed
+2) max tokens : It caps the total no of tokens that the llm can output (note it is not no of words, it is no of tokens)
+3) top p : selects top tokens (from top in terms of highest probability) and select only those much tokens from top whose probability sum <=p. then out of these selected tokens, randomly (weighted on probability) is outputed.
+4) top k tokens: it is very much similar to top p, only difference is it subsets top k tokens (in terms of their probability)
 
    
