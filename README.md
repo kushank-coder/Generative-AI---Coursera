@@ -3,6 +3,7 @@ Note: Hugging face is the main hub for open source LLMs. most of the llms , toke
 Basic framework for applying an llm model:- see "Helper file to apply LLMs" file
 1) masked self attention in the decoder is the key ingredient for self supervised learning of an llm
 2) Evaluation Metrics for a LLM: BLEU (for translation tasks) and ROUGE (for text summarization tasks). Additionally BLEU is recall oriented ie THE DENOMINATOR will have actual human made translations (if we are rating NMT process say) and rouge is precision oriented (ie in denominator we will have predictions by the model).
+Note: BLEU and ROUGE metric do not include the semantic understanding of the complete text. Better metric to evaluate the output is maybe by semantic understanding like SBERT , SVD or topic modelling as well.
 
 Prompt Engineering: / (In Context Learning)
 1) Zero shot Learning : Basically prompt given in an instruction mode
@@ -15,7 +16,7 @@ Fine Tuning:
 
 
 
-You interact with an llm by language not be code (prompt)
+You interact with an llm by language not by code (prompt)
 
 
 1) evaluation of llm is generally done by BLEU, and ROUGE.  But most of the reliable is when the evaluation is done by a human (it is referred to be gold standard) when evaluating the model
