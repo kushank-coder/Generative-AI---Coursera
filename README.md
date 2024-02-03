@@ -52,3 +52,11 @@ There are residual connections in transformers model which helps in efficient in
 
 Solution to 1-> rag (retrieval augmented generation)
 Solution to 2 - > pal (program aided language)
+
+
+
+####Even for very lengthy input sequence even the attention mechanism will not be able to capture aal of its features because of Information bottleneck
+
+1) Key are always the source jisme se info nikalni hai
+2) It is a kind of information retrieval system
+3) Context vector along with target encoding jaegi Neural network mein
