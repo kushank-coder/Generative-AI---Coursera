@@ -60,3 +60,5 @@ Solution to 2 - > pal (program aided language)
 1) Key are always the source jisme se info nikalni hai
 2) It is a kind of information retrieval system
 3) Context vector along with target encoding jaegi Neural network mein
+
+### Note: There are 2 inputs and 2 outputs in each decoder step. That one hidden state, one output of previous decoder are the input and one hidden state and the output of the current decoder. The hidden state produced by previous decoder actuallys is utilized to calculate attention weights that would be applied on encoder hidden states. Attention is computed at each decoder state. This is very important
