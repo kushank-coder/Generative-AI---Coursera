@@ -68,3 +68,5 @@ Solution to 2 - > pal (program aided language)
 
 
 ### Note: Scaled dot product attention is slightly different than cosine similarity (there is a difference in formaula in the denominator). So in a way if we want to apply dot product attention, we need to understand the long range dependencies are more effectively and efficiently captured by scaled dot product attention rather cosine similarity
+
+### Note: Keys and values are same vectors in the scaled dot product attention and queries are the vectors which basically decides the weights that would be finally used to prepare the context vector
