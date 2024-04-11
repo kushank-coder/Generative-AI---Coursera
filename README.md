@@ -65,3 +65,6 @@ Solution to 2 - > pal (program aided language)
 
 
 ### Note: Attention mechanism is a very critical component in any transformer. If the neural net does not have attetion mechanism then definitely the architecture cannot be called transformer
+
+
+### Note: Scaled dot product attention is slightly different than cosine similarity (there is a difference in formaula in the denominator). So in a way if we want to apply dot product attention, we need to understand the long range dependencies are more effectively and efficiently captured by scaled dot product attention rather cosine similarity
