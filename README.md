@@ -70,3 +70,5 @@ Solution to 2 - > pal (program aided language)
 ### Note: Scaled dot product attention is slightly different than cosine similarity (there is a difference in formaula in the denominator). So in a way if we want to apply dot product attention, we need to understand the long range dependencies are more effectively and efficiently captured by scaled dot product attention rather cosine similarity
 
 ### Note: Keys and values are same vectors in the scaled dot product attention and queries are the vectors which basically decides the weights that would be finally used to prepare the context vector.
+
+### Transfer Learning can be of 2 types. 1st you use the model trained differently and then fine tune that model...this way you are using trranfer learning in the model itself (it carries some learning from the pre train process). 2nd the transfer learning could be in the form of input to the model. Push input into something so that features are more aligned or capture the real sense of features and then input these features into a model and you get desired results, in this the learned features itself leverages the learning which is another form of transfer learning)
