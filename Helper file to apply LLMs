@@ -2,6 +2,11 @@
 Note: Hugging face is the main hub for open source LLMs. most of the llms , tokenization, model etc are already built by hugging face
 Basic framework for applying an llm model:-
 
+0.1) 1st and foremost thing login the token from hugging face library
+
+from huggingface_hub import login
+login()
+
 1)  #installing all the libraries (in this course pytorch is used)
 %pip install torch==1.13.1 #installing torch (will be using pytorch)
 %pip install torchdata==0.5.1
